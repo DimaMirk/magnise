@@ -1,6 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { ReactiveFormsModule } from '@angular/forms';
 import { MdbFormsModule } from 'mdb-angular-ui-kit/forms';
+import { PricesService } from '../services/prices.service';
 
 @Component({
   selector: 'app-price-display',
@@ -9,6 +10,15 @@ import { MdbFormsModule } from 'mdb-angular-ui-kit/forms';
   templateUrl: './price-display.component.html',
   styleUrl: './price-display.component.scss'
 })
-export class PriceDisplayComponent {
+export class PriceDisplayComponent implements OnInit {
+
+  constructor(
+    public service:PricesService
+  ){
+    
+  }
+  ngOnInit(): void {
+      this.service.getToken() 
+  }
 
 }

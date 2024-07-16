@@ -10,5 +10,5 @@ import { PriceDisplayComponent } from './price-display/price-display.component';
   imports:[PriceChartComponent, PriceDisplayComponent]
 })
 export class AppComponent {
-  title = 'mdb-angular-ui-kit-free';
+  title = 'magnise';
 }

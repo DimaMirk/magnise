@@ -1,9 +1,11 @@
 {
-  "name": "mdb-angular-ui-kit-free",
+  "name": "magnise",
   "version": "6.1.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "prestart": "node src/app/scripts/set-environment.js",
+    "start": "ng serve -o",
+    "prebuild": "node src/app/scripts/set-environment.js",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
@@ -20,8 +22,9 @@
     "@angular/platform-browser-dynamic": "^17.0.7",
     "@angular/router": "^17.0.7",
     "@fortawesome/fontawesome-free": "^6.0.0",
-    "mdb-angular-ui-kit": "file:mdb-angular-ui-kit-6.1.0.tgz",
     "chart.js": "^3.8.0",
+    "dotenv": "^16.4.5",
+    "mdb-angular-ui-kit": "file:mdb-angular-ui-kit-6.1.0.tgz",
     "ng2-charts": "^3.1.0",
     "rxjs": "~7.5.0",
     "tslib": "^2.1.0",
