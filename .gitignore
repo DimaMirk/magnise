@@ -22,6 +22,10 @@ chrome-profiler-events*.json
 .settings/
 *.sublime-workspace
 
+# dotenv environment variables file
+.env
+.env.test
+
 # IDE - VSCode
 .vscode/*
 !.vscode/settings.json
