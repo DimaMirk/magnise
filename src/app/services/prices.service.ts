@@ -17,9 +17,7 @@ export class PricesService {
 
   getToken(){
     console.log(environment)
-    this.http.get(this.tokenUrl).subscribe(data => {
-     console.log(data)
-    });
+    return this.http.get(this.tokenUrl);
   }
 
   getRealTimePrice(): Observable<any> {
