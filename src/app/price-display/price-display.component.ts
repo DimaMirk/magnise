@@ -18,18 +18,14 @@ export class PriceDisplayComponent implements OnInit {
     
   }
   ngOnInit(): void {
-      this.service.getToken().subscribe((data)=>{
-        if(data){
-          console.log(data)
-        }
-      }) 
+      // this.service.getToken().subscribe((data)=>{
+      //   if(data){
+      //     console.log(data)
+      //   }
+      // }) 
   }
 
   getToken(){
-    this.service.getToken().subscribe((data)=>{
-      if(data){
-        console.log(data)
-      }
-    }) 
+    this.service.getToken()
   }
 }
